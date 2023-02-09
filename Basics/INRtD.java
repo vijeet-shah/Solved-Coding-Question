@@ -1,3 +1,5 @@
+//Write a program to conver INR to Dollar.
+
 import java.util.Scanner;
 public class INRtD
 {    public static void main(String args[]) 
