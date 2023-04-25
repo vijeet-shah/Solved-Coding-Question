@@ -1,0 +1,46 @@
+Bubble Sort Algorithm:Bubble Sort Algorithm is a simple sorting algorithm that works by repeatedly swapping adjacent elements if they are in the wrong order. The idea is to allow larger elements to "bubble up" to the end of the list, resulting in a sorted list after several passes.It involves the following steps:- Start with the first element in the list- Compare the first element with the second element. If the first element is greater than the second element, swap them.- Move to the next pair of elements and repeat step - After comparing all pairs of elements, the largest element will have "bubbled up" to the end of the list.- Repeat steps 1 to 4, excluding the last n-1 elements from the comparison in each pass, where n is the number of elements in the list.-Continue this process until the list is sorted in ascending order.
+
+Consider the following example:
+Suppose we have an array of integers [32, 12, 47, 19, 7, 25, 3].
+The bubble sort algorithm would proceed as follows:
+
+1st Pass:
+Compare 32 and 12, swap them
+Array becomes [12, 32, 47, 19, 7, 25, 3]
+Compare 32 and 47, no swap
+Compare 47 and 19, swap them
+Array becomes [12, 32, 19, 47, 7, 25, 3]
+Continue the comparison for the rest of the elements
+
+2nd Pass:
+Array starts as [12, 32, 19, 47, 7, 25, 3]
+Compare 12 and 32, no swap
+Compare 32 and 19, swap them
+Array becomes [12, 19, 32, 47, 7, 25, 3]
+Continue the comparison for the rest of the elements
+
+3rd Pass:
+Array starts as [12, 19, 32, 47, 7, 25, 3]
+Compare 12 and 19, no swap
+Compare 19 and 32, no swap
+Compare 32 and 47, no swap
+Continue the comparison for the rest of the elements
+
+4th Pass:
+Array starts as [12, 19, 32, 47, 7, 25, 3]
+Compare 12 and 19, no swap
+Compare 19 and 32, no swap
+Compare 32 and 47, no swap
+Continue the comparison for the rest of the elements
+
+5th Pass:
+Array starts as [12, 19, 32, 47, 7, 25, 3]
+Compare 7 and 12, swap them
+Array becomes [7, 12, 19, 32, 47, 25, 3]
+Continue the comparison for the rest of the elements
+
+6th Pass:
+Array starts as [7, 12, 19, 32, 47, 25, 3]
+Compare 7 and 12, no swap
+Continue the comparison for the rest of the elements
+The array is now sorted in ascending order: [3, 7, 12, 19, 25, 32, 47]. It took 6 passes to sort the array using the bubble sort algorithm.

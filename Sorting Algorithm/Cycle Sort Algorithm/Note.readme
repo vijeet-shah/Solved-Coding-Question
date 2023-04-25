@@ -1,0 +1,38 @@
+Cycle Sort is an in-place, unstable sorting algorithm. It is mainly used to optimize the number of writes required to sort a list of elements. In other words, it minimizes the number of swaps required to sort the list.
+Cycle Sort works by keeping track of the number of times an element needs to be written to its correct position in the list. It starts with the first element and cycles through the rest of the elements, swapping them into their correct positions. The process repeats until all elements are in their correct positions.
+The algorithm involves the following steps:
+Initialize a write pointer to the first position of the array.
+Pick the next unsorted element and compare it with the elements to its left.
+If the picked element is smaller than the element at the write pointer, increment the write pointer.
+Swap the picked element with the element at the write pointer.
+Repeat steps 2 to 4 until all elements are sorted.
+Consider the following example:
+Suppose we have an array of integers [32, 12, 47, 19, 7, 25, 3].
+The cycle sort algorithm would proceed as follows:
+
+1st Iteration:
+Array starts as [32, 12, 47, 19, 7, 25, 3]
+Pick the first element 32
+Compare 32 with 12, 47, 19, 7, 25, and 3
+32 is greater than all elements to its left
+Increment the write pointer
+Array becomes [12, 32, 47, 19, 7, 25, 3]
+
+2nd Iteration:
+Array starts as [12, 32, 47, 19, 7, 25, 3]
+Pick the second element 32
+Compare 32 with 47, 19, 7, 25, and 3
+32 is greater than 19, 7, 25, and 3, but less than 47
+Increment the write pointer
+Array becomes [12, 19, 32, 47, 7, 25, 3]
+
+3rd Iteration:
+Array starts as [12, 19, 32, 47, 7, 25, 3]
+Pick the third element 47
+Compare 47 with 7, 25, and 3
+47 is greater than all elements to its left
+Increment the write pointer
+Array becomes [12, 19, 32, 7, 25, 47, 3]
+and so on...
+
+The array is now sorted in ascending order: [3, 7, 12, 19, 25, 32, 47]. It took 7 iterations to sort the array using the cycle sort algorithm.
